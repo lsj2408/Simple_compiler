@@ -1,0 +1,14 @@
+﻿生成启动时间为 2018/11/11 23:39:47。
+     1>项目“D:\大三\大三上\编译技术\课设\2018\T3 词法分析\simple_compiler\simple_compiler\simple_compiler.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\vs\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
+         main.c
+       Link:
+         D:\vs\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\大三\大三上\编译技术\课设\2018\T3 词法分析\simple_compiler\Debug\simple_compiler.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\大三\大三上\编译技术\课设\2018\T3 词法分析\simple_compiler\Debug\simple_compiler.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\大三\大三上\编译技术\课设\2018\T3 词法分析\simple_compiler\Debug\simple_compiler.lib" /MACHINE:X86 Debug\lex.obj
+         Debug\main.obj
+         simple_compiler.vcxproj -> D:\大三\大三上\编译技术\课设\2018\T3 词法分析\simple_compiler\Debug\simple_compiler.exe
+     1>已完成生成项目“D:\大三\大三上\编译技术\课设\2018\T3 词法分析\simple_compiler\simple_compiler\simple_compiler.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:00.72

@@ -1,0 +1,163 @@
+const int n1 = +0, n2 = -1, n3 = 9;
+const char _c1 = '+', _c2 = '-', _c3 = '0', _c4 = 'a', _c5 = 'Z';
+
+int a1a, b2b, A[10];
+char dd, ee, B[20];
+
+
+int fibonacci(int n)		
+{
+	if (n <  1)
+		return (0);
+	if (n == 1)
+		return (0);
+	if (n == 2)
+		return (1);
+	return (fibonacci(n - 1) + fibonacci(n - 2));
+}
+
+int mod(int num)
+{
+	int res, innum;
+	innum = num / 10;
+	res = num - innum*10;
+	return (res);
+}
+
+
+int expr_int(int choose)		
+{
+	int expr_int_result;
+	int i = 0;
+	while (i < 10)
+	{
+		A[i] = i;
+		i = i + 1;
+	}
+	switch (mod(choose))
+	{
+	case 1: expr_int_result = -i-1;	
+	case 2: expr_int_result = +-2-A[2] * '2' / 2; 
+	case 3: expr_int_result = -fibonacci(5);  
+	case 4: expr_int_result = +2-A[4] * '4' / 4 + A[5] * i / 5 - A[6] * '6' / 6;	
+	case 5: expr_int_result = -+i + n3 - _c2+1;	
+	case 6: expr_int_result = -fibonacci(6) + _c4 / 9+1;	
+	case 7: expr_int_result = +-1-A[7] * 'c' / 7 + fibonacci(8) - 520; 
+	case 8: expr_int_result = fibonacci(8) + fibonacci(2)*fibonacci(6); 
+	case 9: expr_int_result = A[0] * fibonacci(9) + 'A' / 'Z' + 9;	
+	default: expr_int_result = -'Z' + 0 * fibonacci(10);	
+	
+	}
+	return (expr_int_result);
+}
+
+
+char expr_char(int choose)	
+{
+				
+	char expr_char_result = '0'-'0'; 
+	int i = 0;
+	while (i < 10)
+	{
+		B[i] = i+'0';
+		i = i + 1;
+	}
+	switch (mod(choose)+'0')	
+	{
+	case '1': expr_char_result = i+'_'-4;				
+	case '2': expr_char_result = B[2] * 'A' / 2-3;		
+	case '3': expr_char_result = i + '+' - '-'-5;		
+	case '4': expr_char_result = -4+B[4] * 'D' / 4 + B[5] * fibonacci('9'-'8') / '+' - B[6] * '6' / 6;	
+	case '5': expr_char_result = fibonacci('D'-'A')+(+4);	
+	case '6': expr_char_result = +fibonacci('Z'-'T') + _c4 / 9+1;	
+	case '7': expr_char_result = -+1+(+B[7]) * 'H' / 7 + fibonacci(8) - 520;	
+	case '8': expr_char_result = _c1 + n2*fibonacci(6);	
+	case '9': expr_char_result = 2+B[0] * fibonacci('O'-'G') + 'd' / 'Z' + 9+(fibonacci(14));
+	}
+	printf("%c", mod(expr_char_result)+'0');
+	return (expr_char_result);
+}
+
+void permutation(int n, int cur)
+{
+	int i, j, k, ok, curn;
+	i = 0;
+	j = 1;
+	k = 0;
+	ok = 1;
+	curn = cur - n
+	if (curn == 0)
+	{
+		while (i < n)
+		{
+			printf(A[i]);
+			i = i + 1;
+		}
+		printf("");		
+	}
+	if (curn)			
+	{
+		while (j < n + 1)
+		{
+			ok = 1;
+			k = 0;
+			while (k < cur)
+			{
+				if (A[k] == j)
+					ok = 0;	
+				k = k + 1;
+			}
+			if (ok)
+			{
+				A[cur] = j;
+				permutation(n, cur + 1);
+			}
+			j = j + 1;
+		}
+	}
+}
+
+void empty()				
+{
+	return;
+}
+
+void main()
+{
+	int nn1, nn2, nn3, n, result;
+	char ch_result;
+
+	scanf(n1);
+	scanf(n2,n3);		
+
+	n = n1+n2+n3;	
+
+	if (n >= 0)
+	{
+		result = expr_int(n);
+		if (result < 0)
+			result = 0 - result;
+		empty();			
+	}
+	if (n < 0)
+	{
+		ch_result = expr_char(0 - n);
+		while ((ch_result - ch_result))
+			;
+		result = ch_result;
+	}
+	switch ((mod(result)))
+	{
+	case 1:permutation(mod(result),0);
+	case 2:permutation(2, 0);
+	case 3:permutation(mod(result),0);
+	case 4:permutation(4, 0);
+	case 5:permutation(5, 0);
+	case 6:printf("Hello world!", fibonacci(mod(result)));
+	case 7:printf("Sing a song!", fibonacci(7));
+	case 8:printf("Learn by coding!", fibonacci(mod(result)));
+	case 9:printf("Enjoy your life!", fibonacci(mod(8)));
+	default:{printf("!&%$~#");}
+	}
+	return;			
+}
